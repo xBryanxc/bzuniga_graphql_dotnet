@@ -1,0 +1,13 @@
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\bin\Debug\netstandard2.0\GraphQLAPI.deps.json
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\bin\Debug\netstandard2.0\GraphQLAPI.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\bin\Debug\netstandard2.0\GraphQLAPI.pdb
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\bin\Debug\netstandard2.0\Models.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\bin\Debug\netstandard2.0\Services.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\bin\Debug\netstandard2.0\Models.pdb
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\bin\Debug\netstandard2.0\Services.pdb
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQLAPI.csprojAssemblyReference.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQLAPI.AssemblyInfoInputs.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQLAPI.AssemblyInfo.cs
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQLAPI.csproj.CopyComplete
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQLAPI.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQLAPI.pdb

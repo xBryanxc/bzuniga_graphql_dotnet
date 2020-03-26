@@ -1,0 +1,3 @@
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQL.csprojAssemblyReference.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQL.AssemblyInfoInputs.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\GraphQL\obj\Debug\netstandard2.0\GraphQL.AssemblyInfo.cs

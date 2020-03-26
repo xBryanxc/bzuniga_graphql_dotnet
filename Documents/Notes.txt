@@ -1,0 +1,67 @@
+--Notes--
+
+Schema => used to define query, mutation and subscriptions
+
+ObjectGraphType<T> => used to expose GraphQL types in our schema
+
+ListGraph<T> => used to define a GraphQL collection
+
+ComplexGraphType<T> => used to define fields within our types; Field builder function creates these
+
+EnumerationGraphType => used to define GraphQL enums 
+
+INputObjectGraphType => defines an input type
+
+ NonNullGraphType => used to require a non null value  
+
+StringGraphType => string field
+
+IntGraphType => int field
+
+DateGraphType => date field
+
+ResolveFieldContext => context passed into the resolver for a field
+
+FuncFieldResolver => delegate that is invoked to resolve a field value
+
+EventStreamFieldType => used for adding an event stream field to a GraphQL type
+
+EventStreamResolver => delegate for handling subscriptions to an event stream field
+
+ResolveEventStreamContext => context passed into the EventStreamResolver
+
+• Register all graphql´s classes and services´s classes in the .net core project
+
+• Services = logic/Linq querys
+
+----------------------------------------------------------------------------------------------------------
+--Querys--
+mutation createOrder($order: OrderInput!){
+  createOrder(order:$order){
+    name
+    description
+    created
+  }
+}
+
+query selectAll{
+  orders{
+    name
+    description
+    created
+    id
+    status
+  }
+}
+
+----------------------------------------------------------------------------------------------------------
+--Variables--
+{
+  "order": {
+    "name": "Order",
+    "description": "Order descrip",
+    "created": "01-01-2021 05:00PM",
+    "id": 1 
+  }
+}
+----------------------------------------------------------------------------------------------------------

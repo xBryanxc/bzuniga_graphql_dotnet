@@ -1,0 +1,11 @@
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\bin\Debug\netstandard2.0\Services.deps.json
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\bin\Debug\netstandard2.0\Services.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\bin\Debug\netstandard2.0\Services.pdb
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\bin\Debug\netstandard2.0\Models.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\bin\Debug\netstandard2.0\Models.pdb
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\obj\Debug\netstandard2.0\Services.csprojAssemblyReference.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\obj\Debug\netstandard2.0\Services.AssemblyInfoInputs.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\obj\Debug\netstandard2.0\Services.AssemblyInfo.cs
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\obj\Debug\netstandard2.0\Services.csproj.CopyComplete
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\obj\Debug\netstandard2.0\Services.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Services\obj\Debug\netstandard2.0\Services.pdb

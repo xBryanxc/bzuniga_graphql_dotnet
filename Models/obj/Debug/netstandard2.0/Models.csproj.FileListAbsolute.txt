@@ -1,0 +1,8 @@
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\bin\Debug\netstandard2.0\Models.deps.json
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\bin\Debug\netstandard2.0\Models.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\bin\Debug\netstandard2.0\Models.pdb
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\obj\Debug\netstandard2.0\Models.csprojAssemblyReference.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\obj\Debug\netstandard2.0\Models.AssemblyInfoInputs.cache
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\obj\Debug\netstandard2.0\Models.AssemblyInfo.cs
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\obj\Debug\netstandard2.0\Models.dll
+C:\Users\bzuniga\Desktop\30_60_90\Graphql\Graphql_BryanZ\Models\obj\Debug\netstandard2.0\Models.pdb
