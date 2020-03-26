@@ -64,15 +64,23 @@ namespace Orders
             return Task.FromResult(orders.AsEnumerable());
         }
 
-        //public Task<Order> StartAsync(string orderId)
-        //{
-        //    var order = GetById(orderId);
-        //    //order.Start();
-        //    var orderEvent = new OrderEvent(order.Id, order.Name, OrderStatuses.PROCESSING, DateTime.Now);
-        //    _events.AddEvent(orderEvent);
-        //    return Task.FromResult(order);
+        public Task<Order> StartAsync(string orderId, OrderStatuses status)
+        {
+            //var order = GetById(orderId);
+            ////order.Start();
+            //var orderEvent = new OrderEvent(order.Id, order.Name, OrderStatuses.PROCESSING, DateTime.Now);
+            //_events.AddEvent(orderEvent);
+            //return Task.FromResult(order);
+            Order order = null;
+            using(var context = new DB_context())
+            {
+                order = context.Orders.SingleOrDefault(p => p.Id == orderId);
 
-        //}
+                order.Status = status;
+                context.SaveChanges();
+            }
+            return Task.FromResult(order);
+        }
     }
 
     public interface IOrderService
@@ -80,6 +88,6 @@ namespace Orders
         Task<Order> GetOrderByIdAsync(string id);
         Task<IEnumerable<Order>> GetOrdersAsync();
         Task<Order> CreateAsync(Order order);
-        //Task<Order> StartAsync(string orderId);
+        Task<Order> StartAsync(string orderId, OrderStatuses status);
     }
 }

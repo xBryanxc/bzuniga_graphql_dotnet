@@ -54,14 +54,24 @@ query selectAll{
   }
 }
 
+mutation updateOrderStatus($id: String! $status: OrderStatuses!){
+  updateOrderStatus(id:$id, status:$status){
+    name
+    status
+  } 
+}
+
 ----------------------------------------------------------------------------------------------------------
 --Variables--
 {
+{
   "order": {
-    "name": "Order",
-    "description": "Order descrip",
+    "name": "Prueba change status",
+    "description": "Prueba subscription 2",
     "created": "01-01-2021 05:00PM",
-    "id": 1 
-  }
+    "id": 1
+  },
+  "id": "4526abc5-ee54-46c0-8715-986fba3e5033",
+  "status": "CLOSED"
 }
 ----------------------------------------------------------------------------------------------------------

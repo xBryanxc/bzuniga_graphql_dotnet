@@ -27,7 +27,7 @@ namespace GraphQLAPI
                 //    var order = new Order(orderInput.Name, orderInput.Description, orderInput.Created, orderInput.CustomerId, id);
                 //    return orders.CreateAsync(order);
                 //}
-            ); 
+            );
 
             //FieldAsync<OrderType>(
             //    "startOrder",
@@ -39,6 +39,25 @@ namespace GraphQLAPI
             //            async c => await orders.StartAsync(orderId));
             //    }
             //);
+            Field<OrderType>(
+                "updateOrderStatus",
+                arguments: new QueryArguments(
+                    new QueryArgument<NonNullGraphType<StringGraphType>>
+                    {
+                        Name = "id"
+                    },
+                    new QueryArgument<NonNullGraphType<OrderStatusesEnum>>
+                    {
+                        Name = "status"
+                    }
+                    ),
+                resolve: context =>
+                {
+                    var orderID = context.GetArgument<string>("id");
+                    var status = context.GetArgument<OrderStatuses>("status");
+
+                    return orders.StartAsync(orderID, status);
+                    });
         }
         public class PersonDelegate
         {
