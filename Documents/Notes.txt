@@ -75,3 +75,11 @@ mutation updateOrderStatus($id: String! $status: OrderStatuses!){
   "status": "CLOSED"
 }
 ----------------------------------------------------------------------------------------------------------
+
+subscription{
+  orderEvent(statuses:[CLOSED]){
+    orderId
+    name
+    status
+  }
+}

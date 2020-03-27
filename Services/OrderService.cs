@@ -10,17 +10,12 @@ namespace Orders
 {
     public class OrderService : IOrderService
     {
-        private readonly IOrderEventService _events;
+        private IOrderEventService _events;
 
-        //private Order GetById(string id)
-        //{
-        //    var order = _orders.SingleOrDefault(o => Equals(o.Id, id));
-        //    if (order == null)
-        //    {
-        //        throw new ArgumentException($"Error! {id} is invalid");
-        //    }
-        //    return order;
-        //}
+        public OrderService(IOrderEventService eventsService)
+        {
+            _events = eventsService;
+        }
 
         public Task<Order> CreateAsync(Order order)
         {
@@ -32,15 +27,15 @@ namespace Orders
 
 
             //event/Subscripcions
-            //var orderEvent = new OrderEvent()
-            //{
-            //    Id = "1",
-            //    Name = order.Name,
-            //    Statuses = order.Status,
-            //    Timestamp = order.Created,
-            //    OrderId = order.Id,
-            //};
-            //_events.AddEvent(orderEvent);
+            var orderEvent = new OrderEvent()
+            {
+                Id = order.Id,
+                OrderId = order.Id,
+                Name = order.Name,
+                Statuses = order.Status,
+                Timestamp = order.Created
+            };
+            _events.AddEvent(orderEvent);
             return Task.FromResult(order);
         }
 
@@ -59,7 +54,7 @@ namespace Orders
             List<Order> orders = new List<Order>();
             using (var context = new DB_context())
             {
-                orders = context.Orders.ToList();
+                orders = context.Orders.OrderBy(o => o.Status).ToList();
             }
             return Task.FromResult(orders.AsEnumerable());
         }

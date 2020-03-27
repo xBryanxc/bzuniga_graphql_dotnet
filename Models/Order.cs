@@ -26,14 +26,9 @@ namespace Models
         public int CustomerId { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; private set; }
+        public string Id { get; set; }
 
         public OrderStatuses Status { get; set; }
-
-        //public void Start()
-        //{
-        //    Status = OrderStatuses.PROCESSING;
-        //}
     }
 
     [Flags]

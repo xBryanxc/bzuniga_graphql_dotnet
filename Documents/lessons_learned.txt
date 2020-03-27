@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------------------
+Issue 1: Problems with the versions of some nugets
+Problem solved? Yes[X] No[]
+How? 
+The versions I needed were not available from the "Nuget package manager". So I installed 
+the newer versions and modified the .csproj to "downgrade" the nuget
+--------------------------------------------------------------------------------------------
+Issue 2: Problem to reflect in real time the subscription
+Problem solved? Yes[] No[X]
+
+
+In a first attempt the program failed. Now it does not fail but the subscriptions are not 
+reflected in real time
+--------------------------------------------------------------------------------------------
+-------------------------------------Other lessons------------------------------------------
+I learned how to build a "graphql api" from scratch, how to create queries, mutations and 
+graphql schema.
+
+Many useful concepts like:
+		Schema => used to define query, mutation and subscriptions
+
+		ObjectGraphType<T> => used to expose GraphQL types in our schema
+
+		ListGraph<T> => used to define a GraphQL collection
+
+		ComplexGraphType<T> => used to define fields within our types; Field builder function creates these
+
+		EnumerationGraphType => used to define GraphQL enums 
+
+		INputObjectGraphType => defines an input type
+
+		NonNullGraphType => used to require a non null value  
+
+		StringGraphType => string field
+
+		IntGraphType => int field
+
+		DateGraphType => date field
+
+		ResolveFieldContext => context passed into the resolver for a field
+
+		FuncFieldResolver => delegate that is invoked to resolve a field value
+
+		EventStreamFieldType => used for adding an event stream field to a GraphQL type
+
+		EventStreamResolver => delegate for handling subscriptions to an event stream field
+
+		ResolveEventStreamContext => context passed into the EventStreamResolver
+--------------------------------------------------------------------------------------------

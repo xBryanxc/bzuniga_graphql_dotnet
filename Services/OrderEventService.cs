@@ -11,7 +11,7 @@ namespace Services
     public class OrderEventService : IOrderEventService
     {
 
-        private readonly ISubject<OrderEvent> _eventStream = new ReplaySubject<OrderEvent>(1);
+        private readonly ISubject<OrderEvent> _eventStream = new ReplaySubject<OrderEvent>();
 
         public OrderEventService()
         {

@@ -1,0 +1,30 @@
+enum Status{
+  CREATED
+  PROCESSING
+  COMPLETED
+  CANCELLED
+  CLOSED	
+}
+
+type Order{
+  id: ID!
+  name: String
+  description: String
+  created: String!
+  status: Status!
+}
+
+type Query {
+  order(id: ID!): Order
+  orders: [Order!]!
+}
+
+type Mutation {
+  createOrder(name: String, description: String, status: Status = CREATED): Order!
+  update(id: String!, status: Status = CLOSED) : Order!
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

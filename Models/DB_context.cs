@@ -8,6 +8,7 @@ namespace Models
     public class DB_context : DbContext
     {
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

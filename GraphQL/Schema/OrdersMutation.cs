@@ -21,24 +21,8 @@ namespace GraphQLAPI
                 arguments: new QueryArguments(
                     new QueryArgument<NonNullGraphType<OrderCreateInputType>> { Name = "order" }),
                 resolve: context => PersonDelegate.CreatePerson(context, orders)
-                //{
-                //    var orderInput = context.GetArgument<OrderCreateInput>("order");
-                //    var id = Guid.NewGuid().ToString();
-                //    var order = new Order(orderInput.Name, orderInput.Description, orderInput.Created, orderInput.CustomerId, id);
-                //    return orders.CreateAsync(order);
-                //}
             );
-
-            //FieldAsync<OrderType>(
-            //    "startOrder",
-            //    arguments: new QueryArguments(new QueryArgument<NonNullGraphType<StringGraphType>> { Name = "orderId" }),
-            //    resolve: async context =>
-            //    {
-            //        var orderId = context.GetArgument<string>("orderId");
-            //        return await context.TryAsyncResolve(
-            //            async c => await orders.StartAsync(orderId));
-            //    }
-            //);
+            
             Field<OrderType>(
                 "updateOrderStatus",
                 arguments: new QueryArguments(
@@ -64,16 +48,15 @@ namespace GraphQLAPI
             public static Order CreatePerson(ResolveFieldContext<object> context, IOrderService service)
             {
                 string output = JsonConvert.SerializeObject(context.Arguments["order"]);
-                dynamic orderInput = JObject.Parse(output);
-                //IEnumerable<dynamic> phoneNumbers = personInput.phoneNumbers;
+                dynamic orderInput = JObject.Parse(output);              
 
                 var order = new Order()
                 {
                     Name = orderInput.name,
                     Description = orderInput.description,
                     Created = orderInput.created,
+                    Id = orderInput.id
                     //Status = orderInput.status ?? OrderStatuses.CREATED,
-                    //CustomerId = orderInput.customerid
                 };
                
                 return service.CreateAsync(order).Result;
